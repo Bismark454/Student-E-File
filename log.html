@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Sign Up Form</title>
+    <link rel="stylesheet" href="log.css">
+</head>
+<body>
+    <div class="container">
+        <div id="loginForm" class="form-container">
+            <h2>Login</h2>
+            <form id="login">
+                <label for="Regnumber">Reg Number:</label>
+                <input type="Text" id="loginRegnumber" required>
+                
+                <label for="loginPassword">Password:</label>
+                <input type="password" id="loginPassword" required>
+                
+                <button type="submit">Login</button>
+                <p>Don't have an account? <a href="#" id="toSignUp">Sign Up</a></p>
+            </form>
+        </div>
+
+        <div id="signUpForm" class="form-container" style="display: none;">
+            <h2>Sign Up</h2>
+            <form id="signup">
+                <label for="signupRegnumber">Reg Number</label>
+                <input type="Regnumber" id="signupRegnumber" required>
+                
+                <label for="signupPassword">Password:</label>
+                <input type="password" id="signupPassword" required>
+                
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" required>
+                
+                <button type="submit">Sign Up</button>
+                <p>Already have an account? <a href="#" id="toLogin">Login</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="log.js"></script>
+</body>
+</html>
